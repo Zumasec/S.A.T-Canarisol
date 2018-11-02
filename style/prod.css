@@ -1,0 +1,38 @@
+/* ::-webkit-scrollbar { 
+    display: none; 
+} */
+.cont1{
+    /* background-image: url("../img/Fondo/tablafruta.jpg"); */
+  
+    /* height: 950px; */
+    text-align: center;
+    width: 100%;
+    margin-top: 0px !important;
+}
+.contfruta{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   
+}
+.contverdura{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   
+}
+.contcuarta{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   
+}
+.contsublime{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   
+}
+.cabecera{
+    height: 64px;
+}

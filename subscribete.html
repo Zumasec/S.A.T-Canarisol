@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- style -->
+    <link rel="stylesheet" href="style/css.css">
+    <link rel="stylesheet" href="style/prod.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+    <!-- Fuentes de google -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <title>SAT Canarisol</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body style="background-color:  rgba(239, 239, 239, 0.73); ">
+
+    <div class="loader-page"></div>
+    <div class="cabecera">
+        <nav class="header navbar fixed-top navbar-expand-xl navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/LOGO.png" class="d-inline-block align-top" alt="" id="logotipo">
+            </a>
+            <button id="toggler-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="toggler-icon" class="navbar-toggler-icon"></span>
+
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+                <div class="navbar-nav mx-auto" id="botones">
+
+                    <a class="nav-item btn btn-outline-secondary" href="index.html">Inicio</a>
+                    <div class="dropdown">
+                        <a class="nav-item btn dropdown-toggle btn-outline-secondary" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Nuestra actividad</a>
+
+                        <div class="dropdown-menu text-center" style="background-color: rgba(239, 239, 239, 0.73); border: none; width: 210px;" aria-labelledby="dropdownMenu2">
+                            <a class="nav-item btn btn-outline-secondary" id="fruta" href="terreno.html">Terreno agricola</a>
+                            <a class="nav-item btn btn-outline-secondary" id="verdura" href="ambiental.html">Implicación ambiental</a>
+                            <a class="nav-item btn btn-outline-secondary" id="cuarta" href="seguridad.html">Seguridad alimentaria</a>
+                          
+                        </div>
+                    </div>
+                    <a class="nav-item btn btn-outline-secondary" href="quien.html">¿Quiénes somos?</a>
+                    <a class="nav-item btn btn-outline-secondary" href="blog.html">Blog</a>
+                    <a class="nav-item btn btn-outline-secondary" href="subscribete.html">Contacta</a>
+                    <!-- <div class="rrss">
+                        <a href="https://www.facebook.com/Frutas-Eduardo-D%C3%ADaz-286269908198051/">
+                            <i class="fab fa-facebook-square icon-socials"></i>
+                        </a>
+                        <a href="https://www.instagram.com/frutas.eduardo/?hl=es">
+                            <i class="fab fa-instagram icon-socials"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/channel/UC3vebf6U7I1X6nn6SFKf-Ag?view_as=subscriber">
+                            <i class="fab fa-youtube icon-socials"> </i>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="cont1">
+        <div class="contcarrusel">
+            <div class="carrusel">
+                <br>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/new/5.JPG" id="bloc" alt="First slide">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="frase" style="text-align: center;  font-family: 'Nunito', sans-serif; font-size: 1.3em; color: #6c757d;">
+        <a href="index.html" style="color: #6c757d;text-decoration:none">Inicio </a>
+        <a style="color: #6c757d96;">/ Contacta</a>
+    </div>
+    <br>
+    <br>
+    <div class="container mb-5">
+        <!-- Contenido -->
+        <div class="row p-5" style="margin: 0 auto;">
+            <div class="col-12 col-xl-6">
+                <div class="form ml-4">
+
+                    <h2 class="text-center ">
+                        <b style="font-family: 'Nunito', sans-serif; color:#5c6369;">Rellene los siguientes datos</b>
+                    </h2>
+                    <br>
+                    <form name="contactform" method="post" action="contact.php">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="Empresa">Empresa</label>
+                                <input type="text" class="form-control" name="empresa" id="empresa" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="Empresa">Nombre y apellidos</label>
+                                <input type="text" class="form-control" name="nombre" id="nombre" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="Empresa">Correo electronico</label>
+                                <input type="text" class="form-control" name="email" id="mcorreo" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="Empresa">Telefono</label>
+                                <input type="text" class="form-control" name="telefono" id="telefono" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="Empresa">Direccion completa</label>
+                                <input type="text" class="form-control" name="direccion" id="direccion">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="Empresa">Comentario</label>
+                                <textarea class="form-control" name="comentarios" id="comentario" rows="3"></textarea>
+
+                            </div>
+                        </div>
+                        <div class="privacidad" style="text-align: center;">
+                            <input type="checkbox" id="myCheck"> Sí, acepto la <a data-toggle="modal" href="#exampleModal">política
+                                de privacidad</a> de
+                            Frutas Eduardo.
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Protección de Datos</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <b> AVISO LEGAL</b><br><br>
+
+                                     <b> 1. Objeto y aceptación</b>  <br>
+                                       El presente aviso legal regula el uso del sitio Web: frutaseduardo.es 
+                                     <br>   El sitio web frutaseduardo.es presta servicios cuyo objetivo primordial es permitir el contacto entre los usuarios y la empresa, bien para ponerse en contacto con nosotros o para pedir presupuestos.
+                                    <br>    La navegación por la página frutaseduardo.es atribuye la condición de usuario de la misma e implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este Aviso Legal, que pueden sufrir modificaciones.
+                                   <br>  El usuario se obliga a hacer un uso correcto del sitio Web de conformidad con las leyes, la buena fe, el orden público, los usos del tráfico y el presente Aviso Legal. El Usuario responderá frente a FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. y frente a terceros, de los daños y perjuicios que pudieran causarse como consecuencia del incumplimiento de dicha obligación.
+                                   <br>  <br>  <b>2. Titularidad de la web e identificación del Prestador de Servicios de la Sociedad de la Información</b>    
+                                    <br>    Con la finalidad de dar cumplimiento al principio de Información general exigido por el Artículo 10 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico  informamos a nuestros usuarios que el presente sitio web pertenece a  FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. con cif B38752440, inscrita en el Registro Mercantil de Santa Cruz De Tenerife en la hoja TF-32935, Folio 54 del tomo 2535 de la Sección General, inscripcion 1ª.
+                                     <br>   Dirección:		Mercado Mercatenerife Modulo 157, 38110 - CENTRO MILITAR HOYA FRIA (Santa Cruz De Tenerife)
+                                                                
+                                    <br>    Correo-e:		     administracion@frutaseduardo.es
+                                                                
+                                     <br>   Teléfono:		     922236087
+                                                                
+                                      <br>  Web alojada por:		     Arsys.es
+                                        <br><br>
+                                        
+                                      <b> 3. Condiciones generales de acceso y utilización</b>  
+                                       <br> El sitio Web y sus servicios son de acceso libre y gratuito, si bien la utilización de determinadas áreas o servicios está condicionada a cumplimentar formularios de recogida de datos. Sólo los mayores de 18 años podrán facilitar datos a través de nuestra web, y los menores de 16 años no pueden facilitarlos sin el consentimiento de los padres o tutores.
+                                      <br>  El Usuario garantiza la autenticidad y actualidad de todos aquellos datos que comunique a FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. y será el único responsable de las manifestaciones falsas o inexactas que realice.
+                                      <br>  frutaseduardo.es tiene los siguientes tipos de usuarios:
+                                     <br>   Usuarios que aportan datos en cualquiera de los formularios disponibles: Los datos personales que FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. solicita incluye el nombre y dirección electrónica y los proporcionados por el propio usuario al rellenar los formularios.
+                                      <br>  Usuarios que no han contactado con FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. pero de los que se recogen datos: Datos proporcionados por las cookies
+                                      <br><br>      <b>3.1. Reglas y prohibiciones de uso para usuarios de nuestros servicios</b>   
+                                      <br>  El Usuario se compromete expresamente a hacer un uso adecuado de los contenidos y servicios ofrecidos y a no emplearlos para:
+                                    <br>    •	Difundir contenidos delictivos, violentos, pornográficos, racistas, xenófobo, ofensivos, de apología del terrorismo o, en general, contrarios a la ley o al orden público.
+                                    <br>    •	Introducir en la red virus informáticos o realizar actuaciones susceptibles de alterar, estropear, interrumpir o generar errores o daños en los documentos electrónicos, datos o sistemas físicos y lógicos de FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. o de terceras personas; así como obstaculizar el acceso de otros Usuarios al sitio Web y a sus servicios.
+                                     <br>   •	Intentar acceder a áreas restringidas de los sistemas informáticos de FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. o de terceros y, en su caso, extraer información.
+                                    <br>    •	Vulnerar los derechos de propiedad intelectual o industrial, así como violar la confidencialidad de la información de FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. o de terceros.
+                                     <br>   •	Suplantar la identidad de otro Usuario, de las administraciones públicas o de un tercero.
+                                     <br>   •	Reproducir, copiar, distribuir, poner a disposición o de cualquier otra forma comunicar públicamente, transformar o modificar los Contenidos, a menos que se cuente con la autorización del titular de los correspondientes derechos o ello resulte legalmente permitido
+                                     <br>   •	Recabar datos con finalidad publicitaria y de remitir publicidad de cualquier clase y comunicaciones con fines de venta u otras de naturaleza comercial sin que medie su previa solicitud o consentimiento.
+                                     <br><br>    <b>3.2. Procedimiento en caso de realización de actividades de carácter ilícito</b>   
+                                       <br> En el caso de que cualquier usuario o un tercero considere que existen hechos o circunstancias que revelen el carácter ilícito de la utilización de cualquier contenido y/o de la realización de cualquier actividad en las páginas Web incluidas o accesibles a través del sitio Web, deberá enviar una notificación a FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. identificándose debidamente, especificando las supuestas infracciones y declarando expresamente y bajo su responsabilidad que la información proporcionada en la notificación es exacta.
+                                       <br><br>    <b> 4. Política de privacidad</b>  
+                                    <br>    El usuario puede consultar cómo FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. utiliza sus datos y las medidas de seguridad implantadas en el siguiente enlace: "política de privacidad"
+                                    <b> 5. Política de cookies</b>   
+                                       <br> FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. instala cookies en el ordenador del usuario. Para conocer más las cookies de nuestro sitio web acuda al siguiente enlace: "política de cookies"
+                                       <br><br>        <b> 6. Notificaciones</b>  
+                                      <br>  Todas las notificaciones y comunicaciones entre los usuarios y FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L.  se considerarán eficaces, a todos los efectos, cuando se realicen a través de correo postal o correo electrónico o comunicación telefónica. Los usuarios deberán dirigirse a FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. mediante:
+                                      <br>  •	Envío por correo postal a la siguiente dirección: FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. – Mercado Mercatenerife Modulo 157, 38110 - CENTRO MILITAR HOYA FRIA (Santa Cruz De Tenerife).
+                                     <br>   •	Envío por correo electrónico a la siguiente dirección: administracion@frutaseduardo.es
+                                     <br><br>         <b>7. Propiedad Industrial y propiedad intelectual</b>   
+                                       <br> Todos los contenidos del sitio Web, como textos, fotografías, gráficos, imágenes, iconos, tecnología, software, así como su diseño gráfico y códigos fuente, constituyen una obra cuya propiedad pertenece a FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L., sin que puedan entenderse cedidos al Usuario ninguno de los derechos de explotación sobre los mismos más allá de lo estrictamente necesario para el correcto uso de la Web.
+                                     <br>   En definitiva, los usuarios que accedan a este sitio Web pueden visualizar los contenidos y efectuar, en su caso, copias privadas autorizadas siempre que los elementos reproducidos no sean cedidos posteriormente a terceros, ni se instalen a servidores conectados a redes, ni sean objeto de ningún tipo de explotación y única y exclusivamente mientras se encuentre en vigor el servicio.
+                                        Asimismo, todas las marcas, nombres comerciales o signos distintivos de cualquier clase que aparecen en el sitio Web son propiedad de FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L., sin que pueda entenderse que el uso o acceso al mismo atribuya al Usuario derecho alguno sobre los mismos.
+                                        Quedan prohibidas la distribución, modificación, cesión o comunicación pública de los contenidos y cualquier otro acto que no haya sido expresamente autorizado por FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. En caso de incumplimiento FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. procederá a adoptar las medidas legales oportunas.
+                                        <br><br>         <b> 8. Exención de responsabilidad y modificación del presente aviso legal</b>  
+                                      <br>  La información que se difunde en esta web se hace única y exclusivamente a título informativo, reservándose FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. el derecho de eliminar o suspender su difusión, total o parcialmente, y a modificar la estructura y contenido de este sitio Web sin aviso previo, pudiendo incluso limitar o no permitir el acceso a dicha información. FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L.intenta  mantener la calidad y actualización de esta información y evitar y minimizar posibles errores pero FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. no responderá de los daños o perjuicios causados por decisiones tomadas en base a la información difundida; ni de inexactitudes, omisiones o errores contenidos en el mismo, ni de los problemas que se originen por el uso de este sitio Web u otro de conexión externa; ni de los daños y/o perjuicios en el software o hardware del usuario que se deriven del acceso a este sitio Web.
+                                        Los Usuarios aceptan expresamente que FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L.  no será responsable del acceso no autorizado o alteración de sus transmisiones o datos, de cualquier material o datos enviados o recibidos o no enviados o recibidos, ni de ninguna transacción realizada a través de su web.
+                                        FRUTAS EDUARDO DIAZ RODRIGUEZ, S.L. se reserva el derecho a modificar el presente aviso legal unilateralmente y sin preaviso  en los términos y condiciones que estime conveniente con la única obligación de informar al usuario de las modificaciones efectuadas a través de frutaseduardo.es
+                                        <br><br>      <b>9. Nulidad parcial</b>   
+                                      <br>  Si alguna de las presentes cláusulas fuese declarada nula y sin efecto por resolución firme dictada por autoridad competente, los restantes términos y condiciones permanecerán en vigor, sin que queden afectados por dicha declaración de nulidad.
+                                      <br><br>        <b>10. Ley aplicable y tribunales competentes</b>   
+                                      <br>  El presente sitio web queda sometido a lo establecido por la legislación española y normativa europea que resulte de aplicación
+                                        Cualquier controversia que surja o guarde relación con el uso de la página web o con dichos productos será sometida a la jurisdicción no exclusiva de los juzgados y tribunales españoles de la provincia de S/C de Tenerife.
+                                        Si se trata de un consumidor final nada en la presente cláusula afectará a los derechos que como tal le reconoce la legislación vigente, pudiendo elegir presentar una reclamación para hacer valer sus derechos en relación con las presentes Condiciones ante el Juez o Tribunales que correspondan a su domicilio.
+                                        <br><br>        <b>Versión: 2.0</b> <br> 
+                                      <b> Fecha: 17/10/18</b> 
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary" onclick="hola()" style="margin-bottom:50px;">Enviar</button>
+                            <button type="reset" class="btn btn-dark" style="margin-bottom:50px;">Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-xl-6">
+                <h2 class="text-center ">
+                    <b style="font-family: 'Nunito', sans-serif; color:#5c6369;">Usa Google Maps y conocenos en persona</b>
+                </h2>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.1915688440167!2d-16.438594848367835!3d28.17108888251671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40242919a7fe51%3A0x710c75f456911916!2sS.A.T.+Canarisol+479%2F05!5e0!3m2!1ses!2ses!4v1541078050832"
+                    width="100%" height="475" id="googlemaps" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+           
+        </div>
+    </div>
+    <section class="chat-container">
+        <i onclick="slideToggle()" style="font-size: 3em; color:#637384;" class="fab fa-facebook-messenger chat-button"></i>
+        <div id="chat-content">
+            <iframe id="mesen" style="display:none" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFrutas-Eduardo-D%C3%ADaz-286269908198051%2F&tabs=messages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </section>
+    <footer id="footer" style="">
+        <div class="redes">
+            <div class="sociales"><br>
+                <p> Nos puedes seguir en: </p>
+                <a href="https://www.facebook.com/Frutas-Eduardo-D%C3%ADaz-286269908198051/">
+                    <i class="fab fa-facebook-square icon-socials ben"></i>&nbsp;
+                </a>
+                <a href="https://www.instagram.com/frutas.eduardo/?hl=es">
+                    <i class="fab fa-instagram icon-socials ben"></i>&nbsp;
+                </a>
+                <a href="https://www.youtube.com/channel/UC3vebf6U7I1X6nn6SFKf-Ag?view_as=subscriber">
+                    <i class="fab fa-youtube icon-socials ben"> </i>
+                </a>
+            </div>
+            <div class="novedades "><br>
+                <label for="ex1"> Esté al tanto de nuestras novedades.</label>
+                
+                <input type="text" class="form-control input-sm" id="ex1" placeholder="Correo Electrónico" >
+                
+            </div>
+            &nbsp; <button type="button" id="boton1" onclick="novedades();" class="btn btn-secondary" style="height: 35px;margin-top: 65px;" >Enviar</button>
+        </div>
+        <br>
+
+    </footer>
+</body>
+<!-- JQUERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.3.5/sweetalert2.all.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<!-- javascript -->
+<script src="js/js.js"></script>
+<script src="js/trello.js"></script>
+<!-- bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</html>

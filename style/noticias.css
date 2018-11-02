@@ -1,0 +1,28 @@
+.noticias{
+    /* border: solid 1px black; */
+    display: flex;
+    flex-wrap: wrap;
+    border-radius:3px;
+    width: 9 0%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.notimagen{
+    border: solid 1px black;
+    border-radius: 3px;
+    border-right: none;
+    width: 49%;
+    margin-left: 7px;
+    padding: 10px;
+    text-align: center;
+}
+.nota{
+    border: solid 1px black;
+    border-radius:3px;
+    border-left: none;
+    width: 49%;
+    margin-left: 4px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}

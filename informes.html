@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-  <script src="js.js"></script>
+    <link rel="stylesheet" href="estiloo.css">
+    <script src="js.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    <div class="login" >
-        <h1>Informes CNS 
-        </h1>
-        <div>
-            <input type="text" id="usuario"  placeholder="Username" required="required" />
-            <input type="password" id="password"  placeholder="Password" required="required" />
-            <button  class="btn btn-primary btn-block btn-large" onclick="Login()">Acceder.</button>
+    <div id="contenedor">
+        <div class="padre" id="comercial" style="display: none;">
+            <div class="hijo">
+            <iframe width="1024" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMmZiNWRkNjgtYzlkZi00ODAxLWE5ZDMtNjQyZDdjMDk0ZDI4IiwidCI6IjBlZGE4YjcyLWIwNzQtNGUxMC1hODBhLWE0OWQ2NDhjYmZlNyIsImMiOjl9&pageName=ReportSectione38d0763cfc9ef1ee3c4" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+        <div class="padre" id="ventas" style="display: none;">
+            <div class="hijo">
+                <iframe width="1024" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiNTcxMDVlMjMtN2Q4OC00MDZiLWFmNWUtMzc0Y2ViNWNiYjRhIiwidCI6IjBlZGE4YjcyLWIwNzQtNGUxMC1hODBhLWE0OWQ2NDhjYmZlNyIsImMiOjl9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+        <div id="menu" style="display: none; width: 1024px;">
+            <button class="btn btn-primary btn-block btn-large" onclick="menu()"> Menú</button>
         </div>
     </div>
+
+    <div class="login">
+
+        <h1 id="titulo" style="display: block;">Informes CNS
+        </h1>
+        <div id="informes" style="display: block;">
+            <input type="text" id="usuario" placeholder="Username" required="required" />
+            <input type="password" id="password" placeholder="Password" required="required" />
+            <button class="btn btn-primary btn-block btn-large" onclick="Login()">Acceder.</button>
+        </div>
+        <div id="tipo" style="display: none;">
+            <button class="btn btn-primary btn-block btn-large" onclick="comercial()"> Comercial</button>
+            <br>
+                <button class="btn btn-primary btn-block btn-large" onclick="ventas()"> Operativa</button>
+        </div>
+
+    </div>
+
+
 </body>
+
 </html>

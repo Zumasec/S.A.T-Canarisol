@@ -22,6 +22,14 @@
                 <iframe width="1024" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiNTcxMDVlMjMtN2Q4OC00MDZiLWFmNWUtMzc0Y2ViNWNiYjRhIiwidCI6IjBlZGE4YjcyLWIwNzQtNGUxMC1hODBhLWE0OWQ2NDhjYmZlNyIsImMiOjl9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
             </div>
         </div>
+
+        <div class="padre" id="comercialfed" style="display: none;">
+            <div class="hijo">
+                <iframe width="1024" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiNzdkY2RlMDItYjk3MS00NzAwLThlM2MtOWQyMzQyOTZjMjc4IiwidCI6IjBlZGE4YjcyLWIwNzQtNGUxMC1hODBhLWE0OWQ2NDhjYmZlNyIsImMiOjl9&pageName=ReportSection02e5ed0e5ba8b8946823" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+
+
         <div id="menu" style="display: none; width: 1024px;">
             <button class="btn btn-primary btn-block btn-large" onclick="menu()"> Menú</button>
         </div>
@@ -29,18 +37,28 @@
 
     <div class="login">
 
-        <h1 id="titulo" style="display: block;">Informes CNS
-        </h1>
+        <h1 id="titulo" style="display: block;">Informes 
+        </h1><br>
         <div id="informes" style="display: block;">
             <input type="text" id="usuario" placeholder="Username" required="required" />
             <input type="password" id="password" placeholder="Password" required="required" />
             <button class="btn btn-primary btn-block btn-large" onclick="Login()">Acceder.</button>
         </div>
         <div id="tipo" style="display: none;">
+            <p id="cns" style="display: block; color: azure;">Canarisol
+            </p>
             <button class="btn btn-primary btn-block btn-large" onclick="comercial()"> Comercial</button>
             <br>
                 <button class="btn btn-primary btn-block btn-large" onclick="ventas()"> Operativa</button>
         </div>
+        <br>
+        <div id="tipofed" style="display: none;">
+            <p id="titulofed" style="display: block;color: azure;">Frutas Eduardo
+            </p>
+            <button class="btn btn-primary btn-block btn-large" onclick="comercialfed()"> Comercial</button>
+            <br>
+        </div>
+        
 
     </div>
 

@@ -7,7 +7,7 @@ var tipo = document.getElementById('tipo');
 function Login() {
     var done = 0;
     
-    if (usuario.value == "" && password.value == "") {
+    if (usuario.value == "ZUMASEC" && password.value == "ZMS20") {
 // window.location = "https://zumasec.github.io/S.A.T-Canarisol/tipos.html";
         document.getElementById("informes").style.display="none"
         document.getElementById("tipo").style.display="block"

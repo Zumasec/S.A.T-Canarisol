@@ -20,7 +20,31 @@
 </head>
 
 <body>
-    <div class="loader-page"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        Swal.fire({
+            title: 'Aviso Importante',
+            html: `
+                <p style="text-align: left; font-size: 15px; line-height: 1.5;">
+                Estimados Sres.:<br><br>
+                Nos ponemos en contacto con ustedes desde <b>S.A.T. Canarisol 479/05</b> (en lo sucesivo, “Canarisol” o la “Sociedad”) para informarles acerca del proceso de reestructuración de la Sociedad.<br><br>
+                Como saben, se ha estado negociando con ustedes y el resto de los acreedores un plan de reestructuración (el “Plan de Reestructuración”) que permita a Canarisol garantizar su viabilidad en el corto y medio plazo.<br><br>
+                Asimismo, se ha solicitado al <b>Juzgado de lo Mercantil Nº 2 de Santa Cruz de Tenerife</b> el nombramiento de <b>BDO Abogados y Asesores Tributarios, S.L.P.</b> como experto en la reestructuración para asistir a la Sociedad y a sus acreedores en las negociaciones y elaboración del Plan de Reestructuración.<br><br>
+                En este sentido, y en cumplimiento de lo establecido en el artículo 627 TRLC, les comunicamos que la Sociedad ha elaborado un Plan de Reestructuración que prevé garantizar el mantenimiento de su actividad y que conlleva una serie de medidas que afectan al crédito que ustedes ostentan frente a Canarisol.<br><br>
+                Por ello, les informamos de que en fecha <b>30 de julio de 2025 a las 11.00hrs (hora canaria)</b> se va a proceder a la firma y elevación a escritura pública del Plan de Reestructuración ante el Notario de Santa Cruz de Tenerife, don Nicolás Quintana Plasencia (o Notario que, en su caso, le sustituya) sito en <i>calle de S. Francisco, 24-26, 38002 (Santa Cruz de Tenerife)</i>. Si hubiese alguna modificación en la fecha, se les hará saber.<br><br>
+                Los acreedores que acrediten legitimación podrán solicitar el envío por correo electrónico del Plan de Reestructuración, dirigiendo sus peticiones a tal efecto a la siguiente dirección: <b>kmartin@satcanarisol.es</b>; <b>jlopez@satcanarisol.es</b><br><br>
+                Sin otro particular, reciban un cordial saludo.
+                </p>
+            `,
+            icon: 'info',
+            showCloseButton: true,
+            showConfirmButton: false,
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            width: '700px'
+        });
+    });
+</script>
     <div class="cabecera">
         <nav class="header navbar fixed-top navbar-expand-xl navbar-light">
             <a class="navbar-brand" href="index.html">
